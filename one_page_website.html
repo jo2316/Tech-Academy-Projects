@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My One-Page Website</title>
+</head>
+<body>
+
+    <!-- Navigation menu with bookmarks to each section -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#gallery">Gallery</a> |
+        <a href="#videos">Videos</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home section -->
+    <header id="home">
+        <h1>Welcome to My One-Page Website</h1>
+        <p>
+            Hello! Thank you for visiting my website. This page is a simple
+            example of how HTML can be used to organize text, images, videos,
+            forms, and navigation in one place.
+        </p>
+        <p>
+            Use the navigation links above to jump to the different sections
+            of this page.
+        </p>
+    </header>
+
+    <main>
+        <!-- Gallery section -->
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <p>Here are a few pictures from the photo gallery.</p>
+
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                    alt="Mountain landscape under a bright sky"
+                    width="400"
+                >
+                <figcaption>A beautiful mountain landscape.</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80"
+                    alt="Sunrise over a peaceful field"
+                    width="400"
+                >
+                <figcaption>A peaceful sunrise in the countryside.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Video section -->
+        <section id="videos">
+            <h2>Videos</h2>
+            <p>Watch the embedded video below.</p>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ScMzIvxBSi4"
+                title="Embedded YouTube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
+        </section>
+
+        <!-- Contact form section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Fill out the form below to send a message.</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="40"
+                        required
+                    ></textarea>
+                </p>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2026 My One-Page Website. All rights reserved.</p>
+        <p><a href="#home">Back to top</a></p>
+    </footer>
+
+</body>
+</html>
